@@ -20,9 +20,9 @@ function uploadData() {
 		method: "POST",
 		body: formData
 	}).then(response => response.json())
-      .then(data => {
-        const base64Image = data.image;
-        addIMG(base64Image);    
+	.then(data => {
+		image_name = data["message"]
+		addIMG(image_name)
 	})
     .catch(error => {
       // Handle the request error
@@ -30,8 +30,8 @@ function uploadData() {
     });
 }
 
-function addIMG(url) {
-	var html = `<img src="data:image/png;base64,` + url + `" alt="final.jpg" width="600" height="400">`;
+function addIMG(image_name) {
+	var html = `<img src="/static/mainapp/images/` + image_name + `" alt="final.jpg" width="600" height="400">`;
 	img_div = document.getElementById("image-container");
 	img_div.innerHTML = html;
 }

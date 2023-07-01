@@ -188,9 +188,18 @@ def upload_data_api(request):
 
 		imgResult = cvzone.overlayPNG(background, combined_image, [png_start_width, 500])
 
-		_, encoded_image = cv2.imencode('.jpg', imgResult)
-		base64_image = base64.b64encode(encoded_image).decode('utf-8')
-		return JsonResponse({'image': base64_image}, safe=False)
+		image_name = 'myimage.jpg'
+		destination_path = os.path.join('mainapp/images', image_name )  # Example: 'images/myimage.jpg'
+        
+		static_root = 'mainapp/static'  # Replace with the actual path to your static folder
+		destination_full_path = os.path.join(static_root, destination_path)
+        
+		success, encoded_image = cv2.imencode('.jpg', imgResult)
+        
+		if success:
+			with open(destination_full_path, 'wb') as file:
+				file.write(encoded_image)
+		return JsonResponse({'message': image_name})
 	else:
 		return JsonResponse({'error': 'not found'}, status=404)
 
