@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowWeLookTogether</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/landing.css' %}"> <!-- Optional: Add your custom CSS styles -->
+</head>
+<body>
+    <header>
+        <h1>HowWeLookTogether</h1>
+        <p>See how you and your partner will look together!</p>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="feature">
+                <img src="/static/mainapp/images/upload.jpg" alt="Upload images">
+                <h2>Upload Images</h2>
+                <p>Upload your images and provide your heights.</p>
+            </div>
+
+            <div class="feature">
+                <img src="/static/mainapp/images/merge.jpg" alt="Generate fused image">
+                <h2>Generate Fused Image</h2>
+                <p>The app will merge your images and create a composite image.</p>
+            </div>
+
+            <div class="feature">
+                <img src="feature3.png" alt="Preview and Save">
+                <h2>Preview and Save</h2>
+                <p>Preview the final result and save it for sharing.</p>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Upload your images and enter your respective heights.</li>
+                <li>The app will crop out the persons from their original images.</li>
+                <li>The images will be resized based on your provided heights.</li>
+                <li>The app will merge the resized images side by side.</li>
+                <li>The merged image will be placed on a default background image.</li>
+                <li>Preview the final result and save it for sharing.</li>
+            </ol>
+        </section>
+
+        <section class="try-it-now">
+            <h2>Try It Now!</h2>
+            <p>Experience the excitement of seeing your future together.</p>
+            <a href="{% url 'home-page' %}" class="cta-button">Get Started</a> <!-- Link to your app page -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HowWeLookTogether Web App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

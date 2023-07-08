@@ -1,0 +1,124 @@
+.form-control {
+	width: 230px;
+	padding-bottom: 10px;
+}
+
+.height {
+	margin-top: 30px;
+	width: 100px;
+}
+
+.col-md-3 {
+	margin-top: 10px;
+	background-color: lightgray;
+}
+
+form {
+	position: absolute;
+	top: 10%; 
+	left: 25%;
+	height: 320px; 
+	width: 400px; 
+	background: gray; 
+	padding: 20px; 
+	border-radius: 2%; 
+	margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.height_div {
+	position: absolute; 
+	bottom: 13%
+}
+
+.form-control-lg {
+	font-size: 30px;
+}
+
+.header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f7f6;
+      margin: 0;
+      padding: 0;
+    }
+    
+.filepond--root {
+      --filepond-main-color: #ff1547; /* Set the main color */
+    }
+
+.filepond--file-action-button,
+.filepond--action-remove-item,
+.filepond--progress-bar-background {
+  background-color: #ff1547; /* Set the background color for buttons and progress bar */
+}
+
+.footer {
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background-color: #e71d36;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #c21830;
+}
+
+#image-container {
+	 display: none;
+	 position: absolute;
+	 top: 15%;
+	 left: 24%;
+	 height: 500px;
+	 width: 800px;
+	 z-index: 2;
+
+	 background-color: #fff;
+}
+
+/*.filepond--panel-root{
+  border-radius: 10px;
+  background-color: #000000; /* Set the background color on hover */
+/*  color: #ffffff; /* Set the text color on hover */
+/*}
+
+.custom-drop-label{
+  border-radius: 10px;
+  background-color: #000000; /* Set the background color on hover */
+/*  color: #ffffff; /* Set the text color on hover */
+/*}
+
+.filepond--drop-label:hover {
+  color: dimgrey;
+}

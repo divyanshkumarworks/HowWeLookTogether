@@ -1,0 +1,84 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  	<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/index.css' %}">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  	<header class="header">
+	    <h1>HowWeLookTogether</h1>
+	  </header>
+
+  	<div class="container-fluid" >
+			<div class="row">
+			  <div class="col" style="height: 567px;">
+          <form id="form1" class="shadow-lg" style="display: block;">
+          	<div class="form-group files">
+	            <h5>Upload Person1 Image File </h5>
+	            <input id="file1" type="file" class="filepond" required>
+	            <div class="height_div" style="width: 90%; position: absolute; bottom: 10%">
+	            	<label for="height1" style="position: absolute; top: 0">Enter 1st person height</label>
+			          <input id="height1" type="number" step="0.01" name="" class="form-control height text-center" required>
+			          <strong>m/cm/ft.</strong>
+	            </div>
+	          </div>
+          </form>
+			  </div>
+		   	<div class="col">
+      		<form id="form2" class="shadow-lg" style="display: block;">
+      			<div class="form-group files" >
+	            <h5>Upload Person2 Image File </h5>
+	            <input id="file2" type="file" class="filepond" required>
+	            <div class="height_div" style="width: 90%; position: absolute; bottom: 10%">
+	            	<label for="height2" style="position: absolute; top: 0">Enter 2nd person height</label>
+			          <input id="height2" type="number" step="0.01" name="" class="form-control height text-center" required>
+			          <strong>m/cm/ft.</strong>
+	            </div>
+	          </div>
+      		</form>
+			  </div>
+			</div>
+		</div>
+		<div style="position: absolute; bottom: 25%; left: 45%">
+			<button id="button" style="display: block;" class="btn btn-secondary btn-lg  btn-huge submit-button" onclick="uploadData()">merge image</button>
+		</div>
+		<div class="container-fluid" >
+			<div id="image-container" style="">
+
+			</div>
+		</div>
+
+		<div id="previewContainer"></div>
+
+		<footer class="footer" style="position: sticky; bottom: 0">
+	    <p>&copy; 2023 HowWeLookTogether Web App. All rights reserved.</p>
+	  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  	<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+		
+    <script type="text/javascript" src="{% static 'mainapp/js/index.js' %}"></script>
+    <script>
+		  FilePond.parse(document.body);
+
+		</script>
+    
+
+  </body>
+</html>
