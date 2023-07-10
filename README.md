@@ -10,6 +10,7 @@ resizes them according to the persons height and merges them side by side on a d
 - Drag and drop images 
 - preview and save images
 - Support JPG, PNG file fromats
+- Image optimization, automatic image resizing, cropping, and fixes EXIF orientation.
 
 ## Installation
 1. Clone this repository
