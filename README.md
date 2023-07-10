@@ -18,7 +18,10 @@ resizes them according to the persons height and merges them side by side on a d
    ```bash
    pip3 install -r requirements.txt
    ```
+4. Download the pre-trained weights and place it inside the root directory. The weights can be downloaded from this link: https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5.
+
 3. Run the website from the root directory
     ```bash
     python manage.py runserver
-    ``` 
+    ```
+
