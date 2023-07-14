@@ -24,7 +24,7 @@ resizes them according to the persons height and merges them side by side on a d
 This project implements Mask_RCNN_TF2 based on tensorflow 2.0, keras 2.2.4 and above. This project first used Mask_RCNN from extracting person mask and bounding boxes for cropping and creating png image. Resizes person's height with respect to another person's height and pastes both the images side by side using [Open_CV](https://www.geeksforgeeks.org/opencv-overview/) and overlays the image on a deafult background with the help of cvzone library. 
 
 #### What is Mask_RCNN?
-Mask RCNN is a deep neural network aimed to solve instance segmentation problem in machine learning or computer vision. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone. Learn more about Mask_RCNN from this link: https://github.com/ahmedfgad/Mask-RCNN-TF2
+Mask RCNN is a deep neural network aimed to solve instance segmentation problem in machine learning or computer vision. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone. Learn more about Mask_RCNN on this page: https://github.com/ahmedfgad/Mask-RCNN-TF2
 
 ## Features
 
