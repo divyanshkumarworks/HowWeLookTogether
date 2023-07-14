@@ -51,7 +51,9 @@ Mask RCNN is a deep neural network aimed to solve instance segmentation problem 
    ```bash
    pip3 install -r requirements.txt
    ```
-5. Download the pre-trained weights and place it inside the root directory. The weights can be downloaded from this link: https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5.
+5. The pre-trained weights of the Mask R-CNN model is based on the COCO dataset. The weights can be downloaded from this link: https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5. After downloading the weights, place it inside the root directory.
+
+   The COCO dataset has 80 classes. There is an additional class for the background named **BG**. Thus, the total number of classes is 81. The classes names are listed in the `CLASS_NAMES` list. **DO NOT CHANGE THE ORDER OF THE CLASSES**.
 
 6. Run the website from the root directory
     ```bash
