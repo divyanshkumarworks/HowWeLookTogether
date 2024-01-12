@@ -40,7 +40,7 @@ Mask RCNN is a deep neural network aimed to solve instance segmentation problem 
    ```
 2. Create Virtual Environment
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    ```
 3. Activate the environment
    ```bash
